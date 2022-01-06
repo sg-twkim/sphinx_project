@@ -9,9 +9,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build HTML
-          uses: ammaraskar/sphinx-action@0.4
+          uses: ammaraskar/sphinx-action@master
+          with:
+              pre-build-command: "pip install -r ./requirements.txt"
+              build-command: "sphinx-build -b html source build/html"
       - name: Upload artifacts
-          uses: actions/upload-artifact@v1
+          uses: actions/upload-artifact@v2
           with:
             name: html-docs
             path: build/html/
