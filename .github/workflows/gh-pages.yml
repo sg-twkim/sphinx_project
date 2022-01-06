@@ -9,10 +9,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build HTML
-          uses: ammaraskar/sphinx-action@master
+          uses: ammaraskar/sphinx-action@0.4
           with:
-              pre-build-command: "pip install -r ./requirements.txt"
-              build-command: "sphinx-build -b html source build/html"
+            pre-build-command: "pip install -r ./requirements.txt"
+            build-command: "sphinx-build -b html source build/html"
       - name: Upload artifacts
           uses: actions/upload-artifact@v2
           with:
@@ -20,7 +20,7 @@ jobs:
             path: build/html/
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/main' }}
+        if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
+          publish_dir: build/html
