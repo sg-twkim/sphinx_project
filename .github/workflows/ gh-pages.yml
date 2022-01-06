@@ -4,12 +4,10 @@ on:
     branches:
       - sphinx_test  # Set a branch name to trigger deployment
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      #- name: Install dependencies
-      #    run: python3 -m pip install -r ./requirements.txt
       - name: Build HTML
           uses: ammaraskar/sphinx-action@0.4
       - name: Upload artifacts
@@ -17,7 +15,6 @@ jobs:
           with:
             name: html-docs
             path: build/html/
-
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
