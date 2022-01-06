@@ -16,8 +16,6 @@ sys.path.insert(0, os.path.abspath('..'))
 
 from doc_test import __version__ as VERSION
 
-import commonmark
-
 # -- Project information -----------------------------------------------------
 
 project = 'doc_test'
