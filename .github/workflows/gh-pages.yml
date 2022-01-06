@@ -11,9 +11,8 @@ jobs:
       - name: Build HTML
         uses: ammaraskar/sphinx-action@0.4
         with:
-          docs-folder: "."
-          pre-build-command: "pip install -r ./requirements.txt --user"
-          build-command: "sphinx-build -b html source build/html"
+          docs-folder: "source/"
+          build-command: "sphinx-build -b html . ../build/html"
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
         with:
