@@ -5,10 +5,16 @@
 
 Welcome to doc_test's documentation!
 ====================================
+.. toctree::
+   :hidden:
+
+   Home <self>
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+
+   modules
 
 
 
