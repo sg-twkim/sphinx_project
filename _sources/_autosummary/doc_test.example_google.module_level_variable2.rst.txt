@@ -1,0 +1,6 @@
+doc\_test.example\_google.module\_level\_variable2
+==================================================
+
+.. currentmodule:: doc_test.example_google
+
+.. autodata:: module_level_variable2

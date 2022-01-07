@@ -1,0 +1,30 @@
+﻿doc\_test
+=========
+
+.. automodule:: doc_test
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
+.. autosummary::
+   :toctree:
+   :template: custom-module-template.rst
+   :recursive:
+
+   doc_test.example_google
+

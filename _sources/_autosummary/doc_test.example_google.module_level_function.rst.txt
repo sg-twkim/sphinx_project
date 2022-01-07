@@ -1,0 +1,6 @@
+doc\_test.example\_google.module\_level\_function
+=================================================
+
+.. currentmodule:: doc_test.example_google
+
+.. autofunction:: module_level_function

@@ -1,0 +1,35 @@
+doc\_test.example\_google.ExampleClass
+======================================
+
+.. currentmodule:: doc_test.example_google
+
+.. autoclass:: ExampleClass
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+      ~ExampleClass.example_method
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExampleClass.readonly_property
+      ~ExampleClass.readwrite_property
+      ~ExampleClass.attr3
+      ~ExampleClass.attr4
+      ~ExampleClass.attr5
+   
+   
