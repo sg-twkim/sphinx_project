@@ -7,14 +7,18 @@ Welcome to doc_test's documentation!
 ====================================
 
 .. toctree::
-   :maxdepth: 2
+   Home <self>
 
-   Home page <self>
-   API reference <_autosummary/doc_test>
+.. autosummary::
+   :caption: Contents
+   :toctree: _autosummary
+   :template: custom-module-template.rst
+   :recursive:
+
+   doc_test
 
 Indices and tables
 ==================
 
 * :ref:`genindex`
 * :ref:`modindex`
-* :ref:`search`
