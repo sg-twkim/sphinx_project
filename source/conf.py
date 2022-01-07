@@ -31,11 +31,11 @@ release = VERSION
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-#extensions = ['sphinx.ext.napoleon', 'sphinx.ext.autodoc', 'sphinx.ext.todo',
-#              'sphinx.ext.githubpages', 'sphinx_autodoc_typehints']
-extensions = ['sphinx.ext.napoleon', 'sphinx_autodoc_typehints',
-              'sphinx.ext.todo', 'sphinx.ext.githubpages','sphinx.ext.viewcode']
-              #'autoapi.extension']
+extensions = ['sphinx.ext.napoleon', 'sphinx.ext.autodoc', 'sphinx.ext.todo',
+              'sphinx.ext.githubpages', 'sphinx.ext.viewcode',
+              'sphinx.ext.autosummary', 'sphinx_autodoc_typehints',
+              ]
+              #['autoapi.extension']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -67,6 +67,9 @@ html_static_path = ['_static']
 
 
 # -- Manual configuration ----------------------------------------------------
+# default config
+add_module_names = False  # Remove namespaces from class/method signatures
+
 # sphinx.ext.napoleon
 napoleon_include_init_with_doc = True  # __init__ 출력
 
@@ -74,5 +77,9 @@ napoleon_include_init_with_doc = True  # __init__ 출력
 todo_include_todos = True  # Todo 출력
 
 # autoapi
-autoapi_type = 'python'
-autoapi_dirs = ['../doc_test']
+# autoapi_type = 'python'
+# autoapi_dirs = ['../doc_test']
+
+# sphinx.ext.autodoc
+autosummary_generate = True  # Turn on sphinx.ext.autosummary
+autodoc_inherit_docstrings = True  # If no docstring, inherit from base class

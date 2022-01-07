@@ -8,9 +8,9 @@ Welcome to doc_test's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
-
+   Home page <self>
+   API reference <_autosummary/doc_test>
 
 Indices and tables
 ==================
