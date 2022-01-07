@@ -2,7 +2,7 @@ name: GitHub Pages
 on:
   push:
     branches:
-      - ${{ github.event.repository.default_branch }}  # Set a branch name to trigger deployment
+      - autosummary  # Set a branch name to trigger deployment
 jobs:
   build:
     runs-on: ubuntu-latest
