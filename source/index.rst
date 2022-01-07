@@ -7,6 +7,8 @@ Welcome to doc_test's documentation!
 ====================================
 
 .. toctree::
+   :hidden:
+
    Home <self>
 
 .. autosummary::
