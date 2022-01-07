@@ -1,7 +1,7 @@
 name: GitHub Pages
 on:
   push:
-    branches: [$default-branch]  # Set a branch name to trigger deployment
+    branches: [ $default-branch ]  # Set a branch name to trigger deployment
 jobs:
   build:
     runs-on: ubuntu-latest
